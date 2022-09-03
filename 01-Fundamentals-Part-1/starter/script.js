@@ -68,13 +68,15 @@ const johnBMI = johnMass / (johnHeight ** 2);
 let markHigherBMI = markBMI > johnBMI;
 
 console.log(markHigherBMI);
-*/
+
+-----
+
 const firstName = "Jonas";
 const job = "teacher";
 const birthyear = 1991;
 const year = 2022;
 const jonas =
-    "I'm " + firstName + " a " + (year - birthyear) + " years old " + job + "!";
+"I'm " + firstName + " a " + (year - birthyear) + " years old " + job + "!";
 console.log(jonas);
 
 const jonasNew = `I'm ${firstName}`;
@@ -83,3 +85,14 @@ console.log("String with \n mulitple \n lines");
 console.loe(`String
 multiple
 lines`);
+*/
+
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+    console.log('Sarah can start driving license 🚗');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} yrears :) `)
+}
