@@ -51,7 +51,7 @@ console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
-// coding challenge #1
+// Coding challenge #1
 // const markMass = 78;
 // const markHeight = 1.69;
 // const johnMass = 92;
@@ -85,7 +85,6 @@ console.log("String with \n mulitple \n lines");
 console.loe(`String
 multiple
 lines`);
-*/
 
 const age = 15;
 const isOldEnough = age >= 18;
@@ -96,3 +95,64 @@ if (isOldEnough) {
     const yearsLeft = 18 - age;
     console.log(`Sarah is too young. Wait another ${yearsLeft} yrears :) `)
 }
+
+// Coding challenge #2
+
+const markMass = 95;
+const markHeight = 1.88;
+const johnMass = 85;
+const johnHeight = 1.76;
+
+const markBMI = markMass / (markHeight ** 2);
+const johnBMI = johnMass / (johnHeight ** 2);
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`)
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`)
+}
+
+
+// Type Conversion and Coercion
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log(String(25));
+
+// Falsy values
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(''));
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all.");
+} else {
+    console.log('You should get a job.');
+}
+
+let height;
+if (height) {
+    console.log('Height is defined.');
+} else {
+    console.log('Hegith is undefined.')
+}
+
+// ## Equality operators == vs ===
+const age = 18;
+if (age === 18) console.log('You just became an adult!');
+
+if (age == 18) console.log('You just became an adult! (loose)');
+
+const favorite = Number(prompt("What's your favorite numer?"));
+console.log(favorite);
+
+if (favorite === 23) {
+    console.log('Cool! 23 is an amazing number!');
+} else if (favorite === 7) {
+    console.log('7 is also a cool number!');
+}
+
+    */
+
