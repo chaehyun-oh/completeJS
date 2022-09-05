@@ -154,5 +154,81 @@ if (favorite === 23) {
     console.log('7 is also a cool number!');
 }
 
-    */
 
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log('Sarah is able to drive.')
+// } else {
+    //     console.log('Someone else should drive...')
+// }
+
+const isTired = true;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive.')
+} else {
+    console.log('Someone else should drive...')
+}
+
+
+// Coding challenge #3
+
+const Dolphins = 96 + 108 + 89;
+const Koalas = 88 + 91 + 110;
+
+const DolphinsAVG = Dolphins / 3;
+const KoalasAVG = Koalas / 3;
+
+if (DolphinsAVG > KoalasAVG) {
+    console.log('Winner is Dolphins!')
+} else if (KoalasAVG > DolphinsAVG) {
+    console.log('Winner is Koalas!')
+} else if (DolphinsAVG === KoalasAVG) {
+    console.log('Draw!')
+}
+
+if (DolphinsAVG > KoalasAVG && DolphinsAVG >= 100) {
+    console.log('Winner is Dolphins!')
+} else if (KoalasAVG > DolphinsAVG && KoalasAVG >= 100) {
+    console.log('Winner is Koalas!')
+} else if (DolphinsAVG === KoalasAVG && DolphinsAVG >= 100 && KoalasAVG >= 100) {
+    console.log('Draw!')
+} else {
+    console.log('No one wins the trophy...')
+}
+
+*/
+
+const day = 'monday';
+
+switch (day) {
+    case 'monday':
+        console.log('Plan course sturcture');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
