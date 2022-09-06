@@ -206,7 +206,6 @@ if (DolphinsAVG > KoalasAVG && DolphinsAVG >= 100) {
     console.log('No one wins the trophy...')
 }
 
-*/
 
 const day = 'monday';
 
@@ -218,17 +217,50 @@ switch (day) {
     case 'tuesday':
         console.log('Prepare theory videos');
         break;
-    case 'wednesday':
+        case 'wednesday':
     case 'thursday':
         console.log('Write code examples');
         break;
     case 'friday':
         console.log('Record videos');
         break;
-    case 'saturday':
-    case 'sunday':
-        console.log('Enjoy the weekend');
-        break;
+        case 'saturday':
+            case 'sunday':
+                console.log('Enjoy the weekend');
+                break;
     default:
         console.log('Not a valid day!');
+    }
+
+    const age = 23;
+    age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+
+    const drink = age >= 18 ? 'Wind' : 'Water';
+    console.log(drink)
+
+    let drink2;
+    if (age >= 18) {
+        drink2 = 'wine';
+    } else {
+        drink2 = 'water';
+    }
+    console.log(drink2);
+
+    console.log(`I like to drink ${age >= 18 ? 'Wine' : 'Water'}`);
+*/
+
+// Coding challenge #4
+const bill = 275;
+const tip = bill * 0.15;
+console.log(`The bill was ${bill}, the tip was ${tip}, and total value is ${bill + tip}`)
+
+
+let tip2 = bill;
+if (bill >= 50 && bill <= 300) {
+    tip2 *= 0.15;
+} else {
+    tip2 *= 0.2;
 }
+console.log(`The bill was ${bill}, the tip was ${tip2}, and total value is ${bill + tip2}`)
+
+console.log(`The bill was ${bill}, the tip was ${bill >= 50 && bill <= 300 ? tip2 = bill * 0.15 : tip2 = bill * 0.2}, and total value is ${bill + tip2}`)

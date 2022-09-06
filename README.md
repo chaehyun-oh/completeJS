@@ -2,7 +2,7 @@
 
 # TIL
 
-| date                             | title                                            |
+| Day                              | Title                                            |
 | -------------------------------- | ------------------------------------------------ |
 | [Day 1](./markdown/cjs220830.md) | S1. Start                                        |
 | [Day 2](./markdown/cjs220831.md) | S2. JavaScript Fundamentals - Part 1 ( 9 ~ 11 )  |
@@ -10,5 +10,6 @@
 | [Day 4](./markdown/cjs220902.md) | S2. JavaScript Fundamentals - Part 1 ( 15 ~ 17 ) |
 | [Day 5](./markdown/cjs220903.md) | S2. JavaScript Fundamentals - Part 1 ( 18 ~ 20 ) |
 | [Day 6](./markdown/cjs220904.md) | S2. JavaScript Fundamentals - Part 1 ( 21 ~ 23 ) |
-| [Day 7](./markdown/cjs220904.md) | S2. JavaScript Fundamentals - Part 1 ( 24 ~ 26 ) |
+| [Day 7](./markdown/cjs220905.md) | S2. JavaScript Fundamentals - Part 1 ( 24 ~ 26 ) |
+| [Day 8](./markdown/cjs220906.md) | S2. JavaScript Fundamentals - Part 1 ( 27 ~ 30 ) |
 |                                  |                                                  |
