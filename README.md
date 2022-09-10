@@ -15,4 +15,5 @@
 | [Day 9](./markdown/cjs220907.md)  | S3. JavaScript Fundamentals - Part 2 ( 31 ~ 34 ) |
 | [Day 10](./markdown/cjs220908.md) | S3. JavaScript Fundamentals - Part 2 ( 35 ~ 38 ) |
 | [Day 11](./markdown/cjs220909.md) | S3. JavaScript Fundamentals - Part 2 ( 39 ~ 42 ) |
+| [Day 12](./markdown/cjs220910.md) | S3. JavaScript Fundamentals - Part 2 ( 43 ~ 46 ) |
 |                                   |                                                  |

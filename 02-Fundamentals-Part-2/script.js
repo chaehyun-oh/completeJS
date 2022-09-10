@@ -195,7 +195,6 @@ const tips = [calcTip(bills[0]), calcTip(bills[1], calcTip(bills[2]))];
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, total);
-*/
 
 const jonas = {
     firstName: 'Jonas',
@@ -203,4 +202,90 @@ const jonas = {
     age: 2022 - 1991,
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
+}
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends')
+console.log(jonas[interestedIn]);
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log('Wrong request');
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschemdtmann';
+
+console.log(jonas);
+console.log(`${jonas.firstName} has ${jonas.friends.length}. and his best friend is called ${jonas.friends[0]}`)
+
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriverLicense: true,
+
+    // calcAge: function (birthYear) {
+        //     return 2022 - birthYear
+        // }
+
+        // calcAge: function () {
+            //     return 2022 - this.birthYear
+            // }
+
+            calcAge: function () {
+                this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+    getSummay: function () {
+        return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
+    }
+
+}
+
+// console.log(jonas.calcAge());
+// console.log(jonas['calcAge'](1991));
+
+console.log(jonas.age);
+
+
+//  # Coding challenge #3
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+}
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+}
+mark.calcBMI();
+john.calcBMI();
+
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than${john.fullName}'s BMI (${john.bmi}) `)
+} else if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than${mark.fullName}'s BMI (${mark.bmi}) `)
+}
+    */
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
 }
