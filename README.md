@@ -19,4 +19,5 @@
 | [Day 13](./markdown/cjs220911.md) | S3. JavaScript Fundamentals - Part 2 ( 47 ~ 50 )                       |
 | [Day 14](./markdown/cjs220912.md) | S7. JavaScript in the Browser: DOM and Events Fundamentals ( 70 ~ 73 ) |
 | [Day 15](./markdown/cjs220913.md) | S7. JavaScript in the Browser: DOM and Events Fundamentals ( 74 ~ 77 ) |
+| [Day 16](./markdown/cjs220914.md) | S7. JavaScript in the Browser: DOM and Events Fundamentals ( 78 ~ 81 ) |
 |                                   |                                                                        |
