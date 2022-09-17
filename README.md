@@ -22,4 +22,5 @@
 | [Day 16](./markdown/cjs220914.md) | S7. JavaScript in the Browser: DOM and Events Fundamentals ( 78 ~ 81 ) |
 | [Day 17](./markdown/cjs220915.md) | S7. JavaScript in the Browser: DOM and Events Fundamentals ( 82 ~ 86 ) |
 | [Day 18](./markdown/cjs220916.md) | S.8 How JavaScript Works Behind the Scenes ( 87 ~ 90 )                 |
+| [Day 19](./markdown/cjs220917.md) | S.8 How JavaScript Works Behind the Scenes ( 91 ~ 93 )                 |
 |                                   |                                                                        |
