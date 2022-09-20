@@ -108,7 +108,6 @@ matilda.calcAge();
 const f = jonas.calcAge;
 // f();
 
-*/
 
 const jonas = {
     firstName: 'Jonas',
@@ -116,30 +115,30 @@ const jonas = {
     calcAge: function () {
         console.log(this);
         console.log(2022 - this.year);
-
-
+        
+        
         // // Solution 1:
         // const self = this;
         // const isMillenial = function () {
-        //     // console.log(this.year >= 1981 && this.year <= 1996);
-        //     console.log(self.year >= 1981 && self.year <= 1996);
-        // };
-
-        // Solution 2:
-        const isMillenial = () => {
-            console.log(this.year >= 1981 && this.year <= 1996);
-        };
-
-        isMillenial();
-    },
-
-    greet: () => console.log(`Hey, ${this.firstName}`),
-};
-jonas.greet();
-jonas.calcAge();
-
-const addExpr = function (a, b) {
-    console.log(arguments);
+            //     // console.log(this.year >= 1981 && this.year <= 1996);
+            //     console.log(self.year >= 1981 && self.year <= 1996);
+            // };
+            
+            // Solution 2:
+            const isMillenial = () => {
+                console.log(this.year >= 1981 && this.year <= 1996);
+            };
+            
+            isMillenial();
+        },
+        
+        greet: () => console.log(`Hey, ${this.firstName}`),
+    };
+    jonas.greet();
+    jonas.calcAge();
+    
+    const addExpr = function (a, b) {
+        console.log(arguments);
     return a + b;
 }
 addExpr(2, 5);
@@ -150,3 +149,53 @@ var addArrow = (a, b) => {
     return a + b
 };
 addArrow(2, 5, 8);
+
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+    name: 'Jonas',
+    age: 30,
+};
+const friend = me;
+friend.age = 27;
+console.log(friend);
+console.log(me);
+
+*/
+
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+const jessica = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27,
+};
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log(jessica);
+console.log(marriedJessica);
+
+// Copying objects
+const jessica2 = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27,
+    family: ['Alice', 'Bob'],
+};
+
+//  Only works oh the first level
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+
+console.log(jessica2, jessicaCopy);

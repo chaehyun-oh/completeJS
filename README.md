@@ -25,4 +25,5 @@
 | [Day 19](./markdown/cjs220917.md) | S.8 How JavaScript Works Behind the Scenes ( 91 ~ 93 )                 |
 | [Day 20](./markdown/cjs220918.md) | S.8 How JavaScript Works Behind the Scenes ( 94 )                      |
 | [Day 21](./markdown/cjs220919.md) | S.8 How JavaScript Works Behind the Scenes ( 95 ~ 98 )                 |
+| [Day 22](./markdown/cjs220920.md) | S.8 How JavaScript Works Behind the Scenes ( 99 ~ 100 )                |
 |                                   |                                                                        |
