@@ -29,5 +29,6 @@
 | [Day 23](./markdown/cjs220921.md) | S.9: Data Structures, Modern Operators and Strings ( 101 ~ 103 )       |
 | [Day 24](./markdown/cjs220922.md) | S.10: A Closer Look at Functions ( 126 ~ 130 )                         |
 | [Day 25](./markdown/cjs220923.md) | S.10: A Closer Look at Functions ( 131 ~ 133 )                         |
-| [Day 26](./markdown/cjs220924.md) | S.10: A Closer Look at Functions ( 134)                                |
+| [Day 26](./markdown/cjs220924.md) | S.10: A Closer Look at Functions ( 134 )                               |
+| [Day 27](./markdown/cjs220925.md) | S.10: A Closer Look at Functions ( 135 ~ 136 )                         |
 |                                   |                                                                        |
