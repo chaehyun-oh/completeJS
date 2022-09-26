@@ -31,4 +31,5 @@
 | [Day 25](./markdown/cjs220923.md) | S.10: A Closer Look at Functions ( 131 ~ 133 )                         |
 | [Day 26](./markdown/cjs220924.md) | S.10: A Closer Look at Functions ( 134 )                               |
 | [Day 27](./markdown/cjs220925.md) | S.10: A Closer Look at Functions ( 135 ~ 136 )                         |
+| [Day 28](./markdown/cjs220926.md) | S.10: A Closer Look at Functions ( 137 ~ 139 )                         |
 |                                   |                                                                        |
