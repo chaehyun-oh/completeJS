@@ -34,4 +34,5 @@
 | [Day 28](./markdown/cjs220926.md) | S.10: A Closer Look at Functions ( 137 ~ 139 )                         |
 | [Day 29](./markdown/cjs220927.md) | S.11: Working with Arrays ( 140 ~ 144 )                                |
 | [Day 30](./markdown/cjs220928.md) | S.11: Working with Arrays ( 145 ~ 147 )                                |
+| [Day 31](./markdown/cjs220929.md) | S.11: Working with Arrays ( 148 ~ 151 )                                |
 |                                   |                                                                        |
