@@ -79,6 +79,13 @@ const displayMovements = function (movements) {
 
 displayMovements(account1.movements);
 
+
+const calcPrintBalance = function (movements) {
+  const blance = movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${blance} EUR`
+};
+calcPrintBalance(account1.movements);
+
 const createUsenames = function (accs) {
   accs.forEach(function (acc) {
     acc.username = acc.owner
@@ -90,8 +97,6 @@ const createUsenames = function (accs) {
 };
 
 createUsenames(accounts);
-console.log(accounts);
-
 
 
 /////////////////////////////////////////////////
@@ -225,4 +230,57 @@ const movementsDescription = movements.map((mov, i) =>
   `Movement ${i + 1}: You  ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(mov)}`
 );
 console.log(movementsDescription);
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const deposits = movements.filter(function (mov) {
+  return mov > 0;
+});
+console.log(movements);
+console.log(deposits);
+
+const depositsFor = [];
+for (const mov of movements) if (mov > 0) depositsFor.push(mov);
+console.log(depositsFor);
+
+
+const withdrawals = movements.filter(mov => mov < 0);
+console.log(withdrawals);
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// const blance = movements.reduce(function (acc, cur, i, arr) {
+//   console.log(`Iteraion ${i}: ${acc}`);
+//   return acc + cur
+// }, 0);
+const blance = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(blance);
+
+let blance2 = 0
+for (const mov of movements) blance2 += mov;
+console.log(blance2);
+
+// maxum value
+const max = movements.reduce((acc, mov) => {
+  if (acc > mov)
+    return acc;
+  else
+    return mov;
+}, movements[0]);
+console.log(max);
+
 */
+// Coding challenge #2
+const calcAverageHumanAge = function (ages) {
+  const humanAges = ages.map(age => age <= 2 ? 2 * age : 16 + age * 4);
+  const adults = humanAges.filter(age => age >= 18);
+
+  console.log(humanAges);
+  console.log(adults);
+
+  const average = adults.reduce((acc, age, i, arr) => acc + age / arr.length, 0);
+  return average;
+};
+const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+console.log(avg1, avg2);
