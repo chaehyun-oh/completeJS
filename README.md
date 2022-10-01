@@ -36,4 +36,5 @@
 | [Day 30](./markdown/cjs220928.md) | S.11: Working with Arrays ( 145 ~ 147 )                                |
 | [Day 31](./markdown/cjs220929.md) | S.11: Working with Arrays ( 148 ~ 151 )                                |
 | [Day 32](./markdown/cjs220930.md) | S.11: Working with Arrays ( 151 ~ 154 )                                |
+| [Day 33](./markdown/cjs221001.md) | S.11: Working with Arrays ( 155 )                                      |
 |                                   |                                                                        |
