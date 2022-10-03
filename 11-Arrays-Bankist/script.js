@@ -77,32 +77,27 @@ const displayMovements = function (movements) {
   });
 };
 
-displayMovements(account1.movements);
-
-
 const calcPrintBalance = function (movements) {
   const blance = movements.reduce((acc, mov) => acc + mov, 0);
   labelBalance.textContent = `${blance} EUR`
 };
-calcPrintBalance(account1.movements);
 
-const calcDisplaySummary = function (movements) {
-  const incomes = movements.filter(mov => mov > 0).reduce((acc, mov) => acc + mov, 0);
+const calcDisplaySummary = function (acc) {
+  const incomes = acc.movements.filter(mov => mov > 0).reduce((acc, mov) => acc + mov, 0);
   labelSumIn.textContent = `${incomes}`;
-  const out = movements.filter(mov => mov < 0).reduce((acc, mov) => acc + mov, 0);
+  const out = acc.movements.filter(mov => mov < 0).reduce((acc, mov) => acc + mov, 0);
   labelSumOut.textContent = `${Math.abs(out)}`;
 
-  const interest = movements.filter(mov => mov > 0)
-    .map(deposit => deposit * 1.2 / 100)
+  const interest = acc.movements.filter(mov => mov > 0)
+    .map(deposit => deposit * acc.interestRate / 100)
     .filter((int, i, arr) => {
       console.log(arr);
       return int >= 1;
     })
     .reduce((acc, int) => acc + int, 0);
   labelSumInterest.textContent = `${interest}`;
-}
+};
 
-calcDisplaySummary(account1.movements);
 
 
 const createUsenames = function (accs) {
@@ -116,6 +111,30 @@ const createUsenames = function (accs) {
 };
 
 createUsenames(accounts);
+
+let currentAccount;
+
+// Event handler
+btnLogin.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  currentAccount = accounts.find(acc => acc.username === inputLoginUsername.value);
+  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+    // Display UI and welcome message
+    labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]}`;
+    containerApp.style.opacity = 100;
+
+    // clear input fields
+    inputLoginUsername.value = inputLoginPin.value = '';
+    inputLoginPin.blur();
+    // Display movements
+    displayMovements(currentAccount.movements);
+    // Display balance
+    calcPrintBalance(currentAccount.movements);
+    // Display summary
+    calcDisplaySummary(currentAccount);
+  };
+});
 
 
 /////////////////////////////////////////////////
@@ -326,7 +345,6 @@ const totalDepositsUSD = movements
   const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
   const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 console.log(avg1, avg2);
-  */
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -335,3 +353,4 @@ console.log(firstWithdrawal);
 
 const account = accounts.find(acc => acc.owner === 'Jessica Davis');
 console.log(account);
+*/
