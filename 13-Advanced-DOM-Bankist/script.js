@@ -64,3 +64,79 @@ document.querySelector('.btn--close--cookie').addEventListener('click', function
   // message.remove();
   message.parentElement.removeChild(message);
 });
+/*
+//  Styles
+message.style.backgroundColor = '#37383d';
+message.style.width = '120%';
+
+console.log(message.style.height);
+console.log(message.style.backgroundColor);
+
+console.log(getComputedStyle(message).color);
+console.log(getComputedStyle(message).height);
+
+message.style.height = Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+//  Attribues
+const logo = document.querySelector('.nav__logo');
+console.log(logo.alt);
+console.log(logo.src);
+console.log(logo.className);
+
+console.log(logo.getAttribute('alt'));
+logo.setAttribute('company', 'Bankist');
+
+console.log(logo.src);
+console.log(logo.getAttribute('src'));
+
+const link = document.querySelector('.twitter-link');
+console.log(link.href);
+console.log(link.getAttribute('href'));
+
+//  Data attributes
+console.log(logo.dataset.versionNumber);
+
+//  Classes
+logo.classList.add('c', 'j');
+logo.classList.remove('c', 'j');
+logo.classList.toggle('c');
+logo.classList.contains('c');
+
+// don't use
+logo.className = 'jonas'
+*/
+
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+
+btnScrollTo.addEventListener('click', function (e) {
+
+  const scloords = section1.getBoundingClientRect();
+  console.log(scloords);
+
+  console.log(e.target.getBoundingClientRect());
+  console.log('Current scroll (X/Y)', window.pageXOffset, pageYOffset);
+
+  console.log(
+    'height/width viewport',
+    document.documentElement.clientHeight,
+    document.documentElement.clientWidth
+  );
+
+  //  scrolling
+  // window.scrollTo(
+  //   scloords.left + window.pageXOffset,
+  //   scloords.top + window.pageYOffset
+  //   );
+
+  // window.scrollTo({
+  //   left: scloords.left + window.pageXOffset,
+  //   top: scloords.top + window.pageYOffset,
+  //   behavior: 'smooth',
+  // });
+
+  // modern way
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
