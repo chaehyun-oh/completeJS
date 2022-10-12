@@ -137,10 +137,12 @@ btnScrollTo.addEventListener('click', function (e) {
   //   behavior: 'smooth',
   // });
 
+
   // modern way
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
+/*
 const h1 = document.querySelector('h1');
 
 const alertH1 = function (e) {
@@ -156,4 +158,29 @@ setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
 // h1.onmouseenter = function (e) {
 //   alert('addEventListener: Great! You are reading the heading')
 // };
+*/
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+const randomColor = () => `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})`;
 
+document.querySelector('.nav__link').addEventListener('click', function (e) {
+  e.preventDefault();
+  this.style.backgroundColor = randomColor();
+  console.log(e.target, e.currentTarget);
+
+  // Stop propagation
+  // e.stopPropagation();
+});
+
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+  e.preventDefault();
+  this.style.backgroundColor = randomColor();
+  console.log(e.target, e.currentTarget);
+
+});
+
+document.querySelector('.nav').addEventListener('click', function (e) {
+  e.preventDefault();
+  this.style.backgroundColor = randomColor();
+  console.log(e.target, e.currentTarget);
+
+}, true);
