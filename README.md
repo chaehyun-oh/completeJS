@@ -55,4 +55,5 @@
 | [Day 49](./markdown/cjs221017.md) | S.13: Advanced DOM and Events ( 198 ~ 199 )                            |
 | [Day 50](./markdown/cjs221018.md) | S.13: Advanced DOM and Events ( 200 ~ 201 )                            |
 | [Day 51](./markdown/cjs221019.md) | S.13: Advanced DOM and Events ( 202 )                                  |
+| [Day 52](./markdown/cjs221020.md) | S.13: Advanced DOM and Events ( 203 )                                  |
 |                                   |                                                                        |
