@@ -58,4 +58,5 @@
 | [Day 52](./markdown/cjs221020.md) | S.13: Advanced DOM and Events ( 203 )                                  |
 | [Day 53](./markdown/cjs221021.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 204 ~ 207 )  |
 | [Day 54](./markdown/cjs221022.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 208 ~ 209 )  |
+| [Day 55](./markdown/cjs221023.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 210 )        |
 |                                   |                                                                        |
