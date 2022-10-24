@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 const Person = function (firstName, birthYear) {
     // console.log(this);
 
@@ -53,3 +53,49 @@ console.log(jonas.species, matilda.species);
 
 console.log(jonas.hasOwnProperty('firstName'));
 console.log(jonas.hasOwnProperty('species'));
+
+console.log(jonas.__proto__);
+//  Object.prototype (top of prototype chain)
+console.log(jonas.__proto__.__proto__);
+console.log(jonas.__proto__.__proto__.__proto__);
+
+console.dir(Person.prototype.constructor);
+
+const arr = [3, 4, 6, 7, 6, 3, 4]
+console.log(arr.__proto__);
+console.log(arr.__proto__ === Array.prototype);
+
+console.log(arr.__proto__.__proto__);
+Array.prototype.unique = function () {
+    return [...new Set(this)]
+}
+console.log(arr.unique());
+
+const h1 = document.querySelector('h1');
+console.dir(x => x + 1);
+*/
+
+// coding Challenge #1
+
+const Car = function (make, speed) {
+    this.make = make;
+    this.speed = speed;
+};
+
+Car.prototype.accelerate = function () {
+    this.speed += 10;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+};
+
+Car.prototype.break = function () {
+    this.speed -= 5;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+};
+
+const bmw = new Car('BMW', 120);
+const mercedes = new Car('Mercedes', 95);
+
+bmw.accelerate();
+bmw.accelerate();
+bmw.break();
+bmw.accelerate();
