@@ -1,5 +1,4 @@
 'use strict';
-/*
 const Person = function (firstName, birthYear) {
     // console.log(this);
 
@@ -31,6 +30,15 @@ const jay = 'Jay'
 console.log(jonas instanceof Person);
 console.log(jay instanceof Person);
 
+
+Person.hey = function () {
+    console.log('Hey there');
+    console.log(this);
+};
+Person.hey();
+// this could't be inherited
+
+/*
 // Prototypes
 console.log(Person.prototype);
 
@@ -98,7 +106,6 @@ bmw.accelerate();
 bmw.accelerate();
 bmw.break();
 bmw.accelerate();
-*/
 
 // class expression
 // const PersonCl = class {};
@@ -127,3 +134,59 @@ console.log(jessica.__proto__ === PersonCl.prototype);
 //     console.log(`Hey ${this.firstName}`);
 // };
 jessica.greet();
+*/
+
+const account = {
+    owner: 'jonas',
+    movements: [200, 530, 120, 300],
+
+    get latest() {
+        return this.movements.slice(-1).pop();
+    },
+    set latest(mov) {
+        this.movements.push(mov);
+    }
+};
+console.log(account.latest);
+
+account.latest = 50;
+console.log(account.movements);
+
+class PersonCl {
+    constructor(fullName, birthYear) {
+        this.fullName = fullName;
+        this.birthYear = birthYear;
+    }
+
+    calcAge() {
+        console.log(2022 - this.birthYear);
+    }
+    greet() {
+        console.log(`Hey ${this.firstName}`);
+    }
+
+    get age() {
+        return 2022 - this.birthYear;
+    }
+
+    set fullName(name) {
+        if (name.includes(' ')) this._fullName = name;
+        else alert(`${name} is not a full name`)
+    }
+
+    get fullName() {
+        return this._fullName;
+    }
+
+    // static method
+    static hey() {
+        console.log('Hey here');
+        console.log(this);
+    }
+};
+
+const jessica = new PersonCl('Jessica Davis', 1996);
+console.log(jessica);
+const walter = new PersonCl('Walter White', 1965);
+
+PersonCl.hey();
