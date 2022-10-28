@@ -215,7 +215,6 @@ const sarah = Object.create(PersonProto);
 sarah.init('Sarah', 1979);
 sarah.calcAge();
 
-*/
 
 // coding challenge #2
 class CarCl {
@@ -250,3 +249,26 @@ ford.accelerate();
 ford.break();
 ford.speedUS = 50;
 console.log(ford);
+*/
+
+const Person = function (firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+};
+
+Person.prototype.calcAge = function () {
+    console.log(2022 - this.birthYear);
+};
+
+const Student = function (firstName, birthYear, course) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+    this.course = course;
+};
+
+Student.prototype.introduce = function () {
+    console.log(`My name is ${this.firstName} and I study ${this.course}`);
+};
+
+const mike = new Student('Mike', 2002, 'Computer Science');
+mike.introduce();
