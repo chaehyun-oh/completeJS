@@ -63,4 +63,6 @@
 | [Day 57](./markdown/cjs221025.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 213 )        |
 | [Day 58](./markdown/cjs221026.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 214 ~ 215 )  |
 | [Day 59](./markdown/cjs221027.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 216 ~ 217 )  |
+| [Day 60](./markdown/cjs221028.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 218 )        |
+| [Day 61](./markdown/cjs221029.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 219 )        |
 |                                   |                                                                        |

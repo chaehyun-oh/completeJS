@@ -95,7 +95,7 @@ Car.prototype.accelerate = function () {
     console.log(`${this.make} is going at ${this.speed} km/h`);
 };
 
-Car.prototype.break = function () {
+Car.prototype.brack = function () {
     this.speed -= 5;
     console.log(`${this.make} is going at ${this.speed} km/h`);
 };
@@ -105,7 +105,7 @@ const mercedes = new Car('Mercedes', 95);
 
 bmw.accelerate();
 bmw.accelerate();
-bmw.break();
+bmw.brack();
 bmw.accelerate();
 
 // class expression
@@ -139,7 +139,7 @@ jessica.greet();
 const account = {
     owner: 'jonas',
     movements: [200, 530, 120, 300],
-    
+
     get latest() {
         return this.movements.slice(-1).pop();
     },
@@ -157,7 +157,7 @@ class PersonCl {
         this.fullName = fullName;
         this.birthYear = birthYear;
     }
-    
+
     calcAge() {
         console.log(2022 - this.birthYear);
     }
@@ -173,7 +173,7 @@ class PersonCl {
         if (name.includes(' ')) this._fullName = name;
         else alert(`${name} is not a full name`)
     }
-    
+
     get fullName() {
         return this._fullName;
     }
@@ -228,7 +228,7 @@ class CarCl {
         console.log(`${this.make} is going at ${this.speed} km/h`);
     };
 
-    break() {
+    brack() {
         this.speed -= 5;
         console.log(`${this.make} is going at ${this.speed} km/h`);
     };
@@ -246,10 +246,9 @@ console.log(ford.speedUS);
 ford.accelerate();
 ford.accelerate();
 ford.accelerate();
-ford.break();
+ford.brack();
 ford.speedUS = 50;
 console.log(ford);
-*/
 
 const Person = function (firstName, birthYear) {
     this.firstName = firstName;
@@ -284,3 +283,46 @@ console.log(mike instanceof Person);
 
 Student.prototype.constructor = Student;
 console.dir(Student.prototype.constructor);
+
+*/
+
+// Coding Challenge #3
+
+const Car = function (make, speed) {
+    this.make = make;
+    this.speed = speed;
+};
+
+Car.prototype.accelerate = function () {
+    this.speed += 10;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+};
+
+Car.prototype.brack = function () {
+    this.speed -= 5;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+};
+
+const EV = function (make, speed, charge) {
+    Car.call(this, make, speed);
+    this.charge = charge;
+};
+
+EV.prototype = Object.create(Car.prototype);
+EV.prototype.chargeBattery = function (chargeTo) {
+    this.charge = chargeTo;
+};
+
+Ev.prototype.accelerate = function () {
+    this.speed += 20;
+    this.charge--;
+    console.log(
+        `${this.make} is going at ${this.speed} km/h, with ad charge of ${this.charge}`
+    );
+}
+
+const tesla = new EV('Tesla', 120, 23);
+tesla.chargeBattery(90);
+console.log(tesla);
+tesla.brack();
+tesla.accelerate();
