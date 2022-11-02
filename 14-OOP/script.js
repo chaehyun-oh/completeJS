@@ -404,7 +404,6 @@ const jay = Object.create(StudentProto);
 jay.init('Jay', 2001, "Computer Science");
 jay.introduce();
 jay.calcAge();
-*/
 
 
 // 1) Public fields 
@@ -483,3 +482,66 @@ Account.helper();
 // Chaining
 acc1.deposit(300).deposit(500).withdraw(35).requestLoan(25000).withdraw(4000);
 console.log(acc1.getMovements());
+*/
+
+// coding challenge #4
+
+class CarCl {
+    constructor(make, speed) {
+        this.make = make;
+        this.speed = speed;
+    };
+
+    accelerate() {
+        this.speed += 10;
+        console.log(`${this.make} is going at ${this.speed} km/h`);
+    };
+
+    brack() {
+        this.speed -= 5;
+        console.log(`${this.make} is going at ${this.speed} km/h`);
+        return this;
+    };
+
+    get speedUS() {
+        return this.speed / 1.6;
+    }
+    set speedUS(speed) {
+        this.speed = this.speed * 1.6;
+    }
+};
+
+class EVCL extends CarCl {
+    #charge;
+    constructor(make, speed, charge) {
+        super(make, speed);
+        this.#charge = charge;
+    };
+
+    chargeBattery(chargeTo) {
+        this.#charge = chargeTo;
+        return this;
+
+    };
+
+    accelerate() {
+        this.speed += 20;
+        this.#charge--;
+        console.log(
+            `${this.make} is going at ${this.speed} km/h, with ad charge of ${this.#charge}`
+        );
+        return this;
+    }
+}
+
+const rivian = new EVCL('Rivian', 120, 23);
+console.log(rivian);
+rivian
+    .accelerate()
+    .accelerate()
+    .accelerate()
+    .brack()
+    .chargeBattery(50)
+    .accelerate()
+
+console.log(rivian.speedUS)
