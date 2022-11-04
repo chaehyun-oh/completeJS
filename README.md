@@ -70,4 +70,5 @@
 | [Day 64](./markdown/cjs221101.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 223 ~ 224 )          |
 | [Day 65](./markdown/cjs221102.md) | S.14: Object-Oriented Programming (OOP) With JavaScript ( 225 ~ 227 )          |
 | [Day 66](./markdown/cjs221103.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 228 ~ 231 ) |
+| [Day 67](./markdown/cjs221104.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 232 ~ 233 ) |
 |                                   |                                                                                |
