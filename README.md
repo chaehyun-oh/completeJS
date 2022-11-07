@@ -73,4 +73,5 @@
 | [Day 67](./markdown/cjs221104.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 232 ~ 233 ) |
 | [Day 68](./markdown/cjs221105.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 234 )       |
 | [Day 69](./markdown/cjs221106.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 235 )       |
+| [Day 70](./markdown/cjs221107.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 236 ~ 238 ) |
 |                                   |                                                                                |
