@@ -80,4 +80,5 @@
 | [Day 74](./markdown/cjs221111.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 242 )       |
 | [Day 75](./markdown/cjs221112.md) | S.15: Mapty App: OOP, Geolocation, External Libraries, and More! ( 243 )       |
 | [Day 76](./markdown/cjs221113.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 244 ~ 247 )   |
+| [Day 77](./markdown/cjs221114.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 248 )         |
 |                                   |                                                                                |
