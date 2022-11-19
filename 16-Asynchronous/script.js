@@ -203,7 +203,8 @@ btn.addEventListener('click', function () {
 });
 
 getCountryData('australia');
-*/
+
+
 // Coding Challenge #1
 const renderCountry = function (data, className = ' ') {
   const html = ` <article class="country ${className}">
@@ -250,3 +251,15 @@ const whereAmI = function (lat, lng) {
 whereAmI(52.508, 13.381);
 whereAmI(19.037, 72.8731);
 whereAmI(-33.933, 18.474);
+
+*/
+
+console.log('Test start');
+setTimeout(() => console.log('0 sec timer'), 0);
+Promise.resolve('Resolved promise 1').then(res => {
+  for (let i = 0; i < 100000; i++) {
+  }
+  console.log(res);
+}
+);
+console.log('Test end');
