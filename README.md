@@ -89,5 +89,6 @@
 | [Day 83](./markdown/cjs221120.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 258 )         |
 | [Day 84](./markdown/cjs221121.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 259 )         |
 | [Day 85](./markdown/cjs221122.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 260 ~ 261 )   |
-| [Day 86](./markdown/cjs221123.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 262 )   |
+| [Day 86](./markdown/cjs221123.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 262 )         |
+| [Day 87](./markdown/cjs221124.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 263 )         |
 |                                   |                                                                                |
