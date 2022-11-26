@@ -419,7 +419,6 @@ createImage('img/img-1.jpg').then(img => {
   })
   .catch(err => console.error(err));
 
-*/
 
 const renderCountry = function (data, className = ' ') {
   const html = ` <article class="country ${className}">
@@ -496,4 +495,59 @@ console.log('1: will get location');
   }
   console.log('3: Finished getting location');
 
+})();
+
+
+const getJson = function (url, errorMsg = "Something went wrong") {
+  return fetch(url).then(response => {
+    if (!response.ok) {
+      throw new Error(`${errorMsg} (${response.status})`)
+    }
+    return response.json();
+  })
+}
+
+const get3Countries = async function (c1, c2, c3) {
+  try {
+    // const [data1] = await getJson(`https://restcountries.com/v3.1/name/${c1}`);
+    // const [data2] = await getJson(`https://restcountries.com/v3.1/name/${c2}`);
+    // const [data3] = await getJson(`https://restcountries.com/v3.1/name/`);
+
+    const data = await Promise.all([
+      getJson(`https://restcountries.com/v3.1/name/${c1}`),
+      getJson(`https://restcountries.com/v3.1/name/${c2}`),
+      getJson(`https://restcountries.com/v3.1/name/`)
+
+    ]);
+    // console.log([data1.capital, data2.capital, data3.capital]);
+    // console.log(data);
+    console.log(data.map(d => d[0].capital));
+
+  } catch (err) {
+    console.error(err);
+  }
+
+};
+
+get3Countries('portugal', 'canada', 'singapore');
+
+*/
+
+const getJson = function (url, errorMsg = "Something went wrong") {
+  return fetch(url).then(response => {
+    if (!response.ok) {
+      throw new Error(`${errorMsg} (${response.status})`)
+    }
+    return response.json();
+  })
+};
+
+
+(async function () {
+  const res = await Promise.race([
+    getJson(`https://restcountries.com/v3.1/name/italy`),
+    getJson(`https://restcountries.com/v3.1/name/egypt`),
+    getJson(`https://restcountries.com/v3.1/name/mexico`),
+  ]);
+  console.log(res[0]);
 })();
