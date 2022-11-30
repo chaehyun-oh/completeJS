@@ -96,4 +96,5 @@
 | [Day 90](./markdown/cjs221127.md) | S.16: Asynchronous JavaScript: Promises, Async/Await, and AJAX ( 267 )              |
 | [Day 91](./markdown/cjs221128.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 268 ~ 270 ) |
 | [Day 92](./markdown/cjs221129.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 271 )       |
+| [Day 93](./markdown/cjs221130.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 272 )       |
 |                                   |                                                                                     |
