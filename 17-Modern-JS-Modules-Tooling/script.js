@@ -43,9 +43,9 @@ console.log(lastPost);
 const lastPost2 = await getLastPost();
 console.log(lastPost2);
 
-(function () {
+const ShoppingCart2 = (function () {
     const cart = [];
-    const shoppingCost = 10;
+    const shippingCost = 10;
     const totalPrice = 237;
     const totalQuantity = 23;
 
@@ -66,3 +66,8 @@ console.log(lastPost2);
         totalQuantity,
     }
 })();
+
+ShoppingCart2.addToCart('apple', 4);
+ShoppingCart2.addToCart('lemon', 3);
+console.log(ShoppingCart2);
+console.log(ShoppingCart2.shippingCost);
