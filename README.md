@@ -98,5 +98,6 @@
 | [Day 92](./markdown/cjs221129.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 271 )       |
 | [Day 93](./markdown/cjs221130.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 272 )       |
 | [Day 94](./markdown/cjs221201.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 273 )       |
-| [Day 95](./markdown/cjs221201.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 274 )       |
+| [Day 95](./markdown/cjs221202.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 274 )       |
+| [Day 96](./markdown/cjs221203.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 275 ~ 276 ) |
 |                                   |                                                                                     |

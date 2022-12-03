@@ -29,6 +29,7 @@ console.log(cart);
 // console.log(data);
 // console.log('something');
 
+/*
 const getLastPost = async function () {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await res.json();
@@ -71,3 +72,15 @@ ShoppingCart2.addToCart('apple', 4);
 ShoppingCart2.addToCart('lemon', 3);
 console.log(ShoppingCart2);
 console.log(ShoppingCart2.shippingCost);
+
+
+// Export 
+export.addToCart = function (product, quantity) {
+    cart.push({ product, quantity });
+    console.log(`${quantity} ${product} added to cart (shipping cost is ${shippingCost}`);
+}
+
+// Import
+const { addToCart } = require('./shoppingCart.js');
+
+*/
