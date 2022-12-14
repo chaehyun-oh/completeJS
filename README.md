@@ -110,4 +110,5 @@
 | [Day 104](./markdown/cjs221211.md) | S.18: Forkify App: Building a Modern Application ( 284 ~ 286 )                      |
 | [Day 105](./markdown/cjs221212.md) | S.18: Forkify App: Building a Modern Application ( 287 )                            |
 | [Day 106](./markdown/cjs221213.md) | S.18: Forkify App: Building a Modern Application ( 288 )                            |
+| [Day 107](./markdown/cjs221214.md) | S.18: Forkify App: Building a Modern Application ( 289 )                            |
 |                                    |                                                                                     |
