@@ -107,8 +107,9 @@
 | [Day 101](./markdown/cjs221208.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 281 )       |
 | [Day 102](./markdown/cjs221209.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 282 )       |
 | [Day 103](./markdown/cjs221210.md) | S.17: Modern JavaScript Development: Modules, Tooling, and Functional ( 283 )       |
-| [Day 104](./markdown/cjs221211.md) | S.18: Forkify App: Building a Modern Application ( 284 ~ 286 )                      |
-| [Day 105](./markdown/cjs221212.md) | S.18: Forkify App: Building a Modern Application ( 287 )                            |
-| [Day 106](./markdown/cjs221213.md) | S.18: Forkify App: Building a Modern Application ( 288 )                            |
-| [Day 107](./markdown/cjs221214.md) | S.18: Forkify App: Building a Modern Application ( 289 )                            |
+| [Day 104](./markdown/cjs221211.md) | S.18: Forkify App: Building a Modern Application ( 284 ~ 287 )                      |
+| [Day 105](./markdown/cjs221212.md) | S.18: Forkify App: Building a Modern Application ( 288 )                            |
+| [Day 106](./markdown/cjs221213.md) | S.18: Forkify App: Building a Modern Application ( 289 )                            |
+| [Day 107](./markdown/cjs221214.md) | S.18: Forkify App: Building a Modern Application ( 290 )                            |
+| [Day 108](./markdown/cjs221215.md) | S.18: Forkify App: Building a Modern Application ( 291 )                            |
 |                                    |                                                                                     |
