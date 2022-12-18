@@ -2,34 +2,38 @@ import icons from 'url:../../img/icons.svg';
 import { Fraction } from 'fractional';
 
 class RecipeView {
-    #parentElement = document.querySelector('.recipe');
-    #data;
-    render(data) {
-        this.#data = data;
-        const markup = this.#generateMarkup();
-        this.#clear();
-        this.#parentElement.insertAdjacentHTML('afterbegin', markup);
-    }
+  #parentElement = document.querySelector('.recipe');
+  #data;
+  render(data) {
+    this.#data = data;
+    const markup = this.#generateMarkup();
+    this.#clear();
+    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+  }
 
-    #clear() {
-        this.#parentElement.innerHTML = '';
-    }
+  #clear() {
+    this.#parentElement.innerHTML = '';
+  }
 
-    renderSpinner = function () {
-        const markup = `
+  renderSpinner = function () {
+    const markup = `
               <div class="spinner">
                 <svg>
                   <use href="${icons}#icon-loader"></use>
                 </svg>
               </div>
         `;
-        this.#parentElement.innerHTML = '';
-        this.#parentElement.insertAdjacentHTML('afterbegin', markup);
-    };
+    this.#parentElement.innerHTML = '';
+    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+  };
+
+  addHandlerRender(handler) {
+    ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
+  }
 
 
-    #generateMarkup() {
-        return `
+  #generateMarkup() {
+    return `
       <figure class="recipe__fig">
       <img src="${this.#data.image}" alt="${this.#data.title}" class="recipe__img" />
       <h1 class="recipe__title">
@@ -106,10 +110,10 @@ class RecipeView {
     </div>
   `;
 
-    }
+  }
 
-    #generateMarkupIngredient(ing) {
-        return `
+  #generateMarkupIngredient(ing) {
+    return `
         <li class="recipe__ingredient">
           <svg class="recipe__icon">
             <use href="src/img/icons.svg#icon-check"></use>
@@ -122,7 +126,7 @@ class RecipeView {
         </li >
                 `;
 
-    }
+  }
 };
 
 export default new RecipeView();
